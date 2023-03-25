@@ -2,6 +2,10 @@ close all;
 clear;
 clc;
 
+if ~exist([pwd() '\figures'], 'dir')
+    mkdir('figures');
+end
+
 addpath('../quasi-optics-library');
 c = physconst('LightSpeed');
 
